@@ -4,107 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usman Ashraf - CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
-        .container {
-            width: 900px;
-            margin: 30px auto;
-            background: #ffffff;
+        
+        body {
+            background: #f4f4f4;
             display: flex;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .cv-container {
+            width: 800px;
+            background: #2C3E50;
+            display: flex;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
             overflow: hidden;
         }
-        .left-section {
-            width: 35%;
-            background: #2c3e50;
+
+        .left-column {
+            background: #37371e;
             color: white;
-            padding: 40px;
+            width: 35%;
+            padding: 30px;
             text-align: center;
         }
-        .left-section img {
-            width: 130px;
+
+        .left-column img {
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .right-section {
-            width: 65%;
-            padding: 40px;
-        }
-        h1, h2, h3 {
+            object-fit: cover;
             margin-bottom: 15px;
+            border: 4px solid white;
         }
-        .section {
-            margin-bottom: 25px;
+
+        .left-column h2, .right-column h1, .right-column h2 {
+            color: white;
         }
-        ul {
+
+        .left-column ul {
             list-style: none;
             padding: 0;
+            margin-top: 10px;
         }
+
+        .left-column ul li {
+            font-size: 14px;
+            padding: 5px 0;
+        }
+
+        .right-column {
+            width: 65%;
+            padding: 30px;
+            background: #34495E;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+
+        p, ul {
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        ul {
+            padding-left: 15px;
+        }
+
         ul li {
-            padding: 8px 0;
-        }
-        a {
-            color: #1abc9c;
-            text-decoration: none;
-            font-weight: bold;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left-section">
-            <img src="profile.jpg" alt="Profile Picture">
-            <h1>Usman Ashraf</h1>
-            <h2>Flutter App Developer</h2>
-            <p>usman.ashraf024@gmail.com</p>
-            <p>+92167814735</p>
-            <p><a href="http://linkedin.com/in/usman-ashraf">LinkedIn</a></p>
-            <p><a href="https://github.com/Usman-AD">GitHub</a></p>
+
+    <div class="cv-container">
+        <div class="left-column">
+            <img src="profile1.jpg" alt="Usman Ashraf">
+            <h2>Usman Ashraf</h2>
+            <p>App Developer | Flutter & React Native</p>
+
+            <h2>Contact</h2>
+            <ul>
+                <li>📍 Sargodha, Pakistan</li>
+                <li>📧 programmerusman4@gmail.com</li>
+                <li>📞 +923167814735</li>
+                <li>🔗 <a href="https://linkedin.com/in/usman" target="_blank" style="color: white;">LinkedIn Profile</a></li>
+            </ul>
+
+            <h2>Languages</h2>
+            <ul>
+                <li>Urdu (Native)</li>
+                <li>English (Proficient)</li>
+            </ul>
         </div>
-        <div class="right-section">
-            <div class="section">
-                <h3>Education</h3>
-                <p><strong>University Of Sargodha</strong> - Bachelors of Computer Sciences | 2021 - 2025</p>
-                <p><strong>Reader College Sargodha</strong> - FSC Pre-Engineering | 2019 - 2021</p>
-            </div>
-            <div class="section">
-                <h3>Skills</h3>
-                <ul>
-                    <li>UI Development: Flutter, Dart</li>
-                    <li>Databases: Firebase, Firestore, Supabase, SQLite</li>
-                    <li>Programming: Dart, Kotlin, Java, C++</li>
-                    <li>App Development: Flutter Development, API Integration, UI/UX Design</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h3>Projects</h3>
-                <ul>
-                    <li><strong>Alarmy App</strong> - Wake-up challenge system with various missions</li>
-                    <li><strong>Mood Diary App</strong> - Note keeping with images and date-based viewing</li>
-                    <li><strong>PrintItOut</strong> - Bluetooth printer integration for automatic order printing</li>
-                </ul>
-            </div>
-            <div class="section">
-                <h3>Achievements</h3>
-                <ul>
-                    <li>135+ problems solved on LeetCode</li>
-                    <li>Participated in 2 Hackathons</li>
-                    
-                </ul>
-            </div>
-            <div class="section">
-                <h3>Interests</h3>
-                <p>Video Games, Watching Anime, Learning new Flutter technologies</p>
-            </div>
+
+        <div class="right-column">
+            <h1>Professional Summary</h1>
+            <p>Innovative and detail-oriented App Developer with experience in designing and developing mobile applications using Flutter & React Native.</p>
+
+            <h2>Education</h2>
+            <p><strong>University of Sargodha</strong> - BSc in Computer Science (2021-2025)</p>
+            <p><strong>Reader College, Sargodha</strong> - ICS (2019-2021)</p>
+
+            <h2>Skills</h2>
+            <ul>
+                <li>Mobile Development: Flutter, React Native, Android</li>
+                <li>Front-End: Dart, JavaScript, SwiftUI</li>
+                <li>Back-End: Firebase, Node.js, Express.js, MySQL, MongoDB</li>
+            </ul>
+
+            <h2>Experience</h2>
+            <p><strong>Mobile App Developer</strong> (2023 - Present)</p>
+            <p>Developed cross-platform mobile applications using Flutter and React Native.</p>
+
+            <p><strong>App Development Intern</strong> (2024 - Present)</p>
+            <p>Assisted in building native apps, worked on UI enhancements, and implemented animations.</p>
+
+            <h2>Projects</h2>
+            <p><strong>E-Commerce App (2023)</strong> - Built a shopping app using Flutter & Firebase.</p>
+            <p><strong>Health & Fitness App (2024)</strong> - Designed an app for workout tracking & meal planning.</p>
+            <p><strong>Task Management App (2025)</strong> - Developed a productivity app with push notifications & cloud storage.</p>
+
+            <h2>Achievements</h2>
+            <ul>
+                <li>Published apps on Play Store/App Store</li>
+                <li>Developed a startup app prototype</li>
+                <li>Featured in a tech blog/article</li>
+            </ul>
+
+            <h2>Interests</h2>
+            <ul>
+                <li>Innovation</li>
+                <li>Painting</li>
+                <li>Coding</li>
+                <li>Books</li>
+            </ul>
         </div>
     </div>
+
 </body>
 </html>
